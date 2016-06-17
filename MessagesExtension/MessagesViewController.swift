@@ -41,8 +41,9 @@ class MessagesViewController: MSMessagesAppViewController {
 //            
 //        } else {
         // Get a new tweet
-        controller = instantiateGetTweetViewController()
-        
+        let getTweet = instantiateGetTweetViewController()
+        getTweet.delegate = self
+        controller = getTweet
 //        }
         
         for child in childViewControllers {
@@ -111,4 +112,37 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
     
+    private func composeMessage(with tweet: String, caption: String, session: MSSession? = nil) -> MSMessage {
+        var components = URLComponents()
+        components.queryItems = [URLQueryItem(name: "Tweet", value: tweet)]
+        
+        let layout = MSMessageTemplateLayout()
+        layout.image = GetTweetViewController.renderTweet(tweet: tweet)
+        layout.caption = caption
+        
+        let message = MSMessage(session: session ?? MSSession())
+        message.url = components.url
+        message.layout = layout
+        
+        return message
+    }
+}
+
+extension MessagesViewController: GetTweetViewControllerDelegate {
+    func getTweetViewController(_ controller: GetTweetViewController, didGetTweet tweet: String) {
+        guard let conversation = activeConversation else { fatalError("Expected a conversation") }
+        
+        let messageCaption = "Phil Fish says..."
+        let changeDescription = "Some wisdom from industry legend Phil Fish"
+        
+        let message = composeMessage(with: tweet, caption: messageCaption, session: conversation.selectedMessage?.session)
+        
+        conversation.insert(message, localizedChangeDescription: changeDescription) { error in
+            if let error = error {
+                print(error)
+            }
+        }
+
+        dismiss()
+    }
 }

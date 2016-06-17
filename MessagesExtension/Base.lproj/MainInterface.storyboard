@@ -32,8 +32,7 @@
                                     <action selector="tappedFishButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="3Ws-VW-0PH"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-bE-EIv"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv6-7h-u3h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jv6-7h-u3h">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -41,25 +40,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jv6-7h-u3h" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="2md-U9-tEM"/>
+                            <constraint firstItem="jv6-7h-u3h" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="8" id="2md-U9-tEM"/>
                             <constraint firstItem="deH-T1-NjU" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="BgM-fE-ir3"/>
+                            <constraint firstItem="fLp-hw-Srv" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="-20" id="GMj-Ff-JyW"/>
                             <constraint firstAttribute="trailing" secondItem="deH-T1-NjU" secondAttribute="trailing" id="WeZ-LV-nvl"/>
                             <constraint firstItem="deH-T1-NjU" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="X0O-hF-Oz8"/>
                             <constraint firstItem="fLp-hw-Srv" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="d59-wl-5jI"/>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="jv6-7h-u3h" secondAttribute="bottom" constant="20" id="dDC-eg-kmN"/>
-                            <constraint firstItem="YVc-bE-EIv" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="f7A-AU-nfg"/>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="deH-T1-NjU" secondAttribute="bottom" id="gfT-zI-xzt"/>
-                            <constraint firstItem="jv6-7h-u3h" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="mn6-Mx-cVA"/>
-                            <constraint firstItem="YVc-bE-EIv" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="oY3-0Q-Qvl"/>
                             <constraint firstItem="fLp-hw-Srv" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="rME-PA-ge7"/>
-                            <constraint firstItem="fLp-hw-Srv" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="x42-Lo-XG1"/>
-                            <constraint firstItem="jv6-7h-u3h" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="zh8-iP-GyA"/>
+                            <constraint firstItem="jv6-7h-u3h" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="rs8-KA-3UF"/>
+                            <constraint firstItem="jv6-7h-u3h" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" constant="-8" id="zh8-iP-GyA"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="YVc-bE-EIv" id="M6f-BN-4Fz"/>
                         <outlet property="fishMeButton" destination="fLp-hw-Srv" id="9mY-I3-jZ0"/>
                         <outlet property="quoteLabel" destination="jv6-7h-u3h" id="67w-aK-0md"/>
                     </connections>
