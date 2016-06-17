@@ -1,6 +1,0 @@
-framework module TwitterJSON {
-  umbrella header "TwitterJSON-umbrella.h"
-
-  export *
-  module * { export * }
-}

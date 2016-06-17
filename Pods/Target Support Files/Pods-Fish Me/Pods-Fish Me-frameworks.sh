@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/TwitterJSON/TwitterJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MutableDataScanner/MutableDataScanner.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/OAuthSwift/OAuthSwift.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/TwitterAPI/TwitterAPI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/TwitterJSON/TwitterJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MutableDataScanner/MutableDataScanner.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/OAuthSwift/OAuthSwift.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/TwitterAPI/TwitterAPI.framework"
 fi

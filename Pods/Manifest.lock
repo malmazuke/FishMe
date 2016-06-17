@@ -1,18 +1,18 @@
 PODS:
-  - Alamofire (1.3.1)
-  - SwiftyJSON (2.2.1)
-  - TwitterJSON (1.0.0):
-    - Alamofire (~> 1.3)
-    - SwiftyJSON (~> 2.2.1)
+  - MutableDataScanner (1.0.7)
+  - OAuthSwift (0.5.2)
+  - TwitterAPI (0.1.0):
+    - MutableDataScanner
+    - OAuthSwift
 
 DEPENDENCIES:
-  - TwitterJSON (~> 1.0)
+  - TwitterAPI (~> 0.1)
 
 SPEC CHECKSUMS:
-  Alamofire: e4ab637e3195b645c814b87a652373439e59f2a4
-  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
-  TwitterJSON: 52d5db1ded3362ac8e3cedbd86a98c02bcd7e316
+  MutableDataScanner: bba5d238d7191f0e567c695f833c5d6cebcc093d
+  OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
+  TwitterAPI: adc61bdf90fde855e84c1bc67223c5877f22b464
 
-PODFILE CHECKSUM: b2ef8af1dfe13def2cb4168ec31c5d7733a7f007
+PODFILE CHECKSUM: 44c8be70d328f7e1784079ce5b0f83db00c54249
 
 COCOAPODS: 1.0.0.beta.4
