@@ -25,7 +25,10 @@ class GetTweetViewController: MSMessagesAppViewController {
     }
     
     @IBAction func tappedFishButton(_ sender: AnyObject) {
-        
+        fishMeButton.isHidden = true
+        quoteLabel.isHidden = false
+        let randomIndex = Int(arc4random_uniform(UInt32(philFishTopTweets.count - 1)))
+        quoteLabel.text = philFishTopTweets[randomIndex]
     }
     
     override func didReceiveMemoryWarning() {

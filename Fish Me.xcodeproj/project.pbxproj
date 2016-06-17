@@ -14,6 +14,7 @@
 		669C9BB11D13724500E4EE03 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669C9BAF1D13724500E4EE03 /* MainInterface.storyboard */; };
 		669C9BB31D13724500E4EE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669C9BB21D13724500E4EE03 /* Assets.xcassets */; };
 		669C9BBF1D13768100E4EE03 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669C9BBE1D13768100E4EE03 /* MessagesViewController.swift */; };
+		669C9BC11D1396E400E4EE03 /* PhilFishTopTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669C9BC01D1396E400E4EE03 /* PhilFishTopTweets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		669C9BB21D13724500E4EE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669C9BB41D13724500E4EE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669C9BBE1D13768100E4EE03 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		669C9BC01D1396E400E4EE03 /* PhilFishTopTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhilFishTopTweets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				669C9BB21D13724500E4EE03 /* Assets.xcassets */,
 				669C9BB41D13724500E4EE03 /* Info.plist */,
 				669C9BBE1D13768100E4EE03 /* MessagesViewController.swift */,
+				669C9BC01D1396E400E4EE03 /* PhilFishTopTweets.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -172,12 +175,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 96GA29E953;
 						DevelopmentTeamName = "Mark Feaver";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					669C9BA41D13724500E4EE03 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 96GA29E953;
 						DevelopmentTeamName = "Mark Feaver";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -228,6 +233,7 @@
 			files = (
 				669C9BBF1D13768100E4EE03 /* MessagesViewController.swift in Sources */,
 				669C9BAE1D13724500E4EE03 /* GetTweetViewController.swift in Sources */,
+				669C9BC11D1396E400E4EE03 /* PhilFishTopTweets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -365,6 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
