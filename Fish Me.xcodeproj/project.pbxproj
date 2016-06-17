@@ -14,7 +14,6 @@
 		669C9BB11D13724500E4EE03 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669C9BAF1D13724500E4EE03 /* MainInterface.storyboard */; };
 		669C9BB31D13724500E4EE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669C9BB21D13724500E4EE03 /* Assets.xcassets */; };
 		669C9BBF1D13768100E4EE03 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669C9BBE1D13768100E4EE03 /* MessagesViewController.swift */; };
-		F3CB09701A43E8A747C39594 /* Pods_Fish_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAA287D7177E53D3D2FC8AA /* Pods_Fish_Me.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1BAA287D7177E53D3D2FC8AA /* Pods_Fish_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fish_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		669C9B9B1D13724500E4EE03 /* Fish Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fish Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		669C9B9E1D13724500E4EE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669C9BA01D13724500E4EE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,8 +51,6 @@
 		669C9BB21D13724500E4EE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669C9BB41D13724500E4EE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669C9BBE1D13768100E4EE03 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		8A3F4CBCC81F4780AC0CC8AF /* Pods-Fish Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fish Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fish Me/Pods-Fish Me.release.xcconfig"; sourceTree = "<group>"; };
-		DAD1D931E495C4107EA0CF45 /* Pods-Fish Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fish Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fish Me/Pods-Fish Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CB09701A43E8A747C39594 /* Pods_Fish_Me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		498FF61412B8B3BC162048F9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DAD1D931E495C4107EA0CF45 /* Pods-Fish Me.debug.xcconfig */,
-				8A3F4CBCC81F4780AC0CC8AF /* Pods-Fish Me.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		669C9B941D13724500E4EE03 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +79,6 @@
 				669C9BAC1D13724500E4EE03 /* MessagesExtension */,
 				669C9BA91D13724500E4EE03 /* Frameworks */,
 				669C9B9C1D13724500E4EE03 /* Products */,
-				498FF61412B8B3BC162048F9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				669C9BAA1D13724500E4EE03 /* Messages.framework */,
-				1BAA287D7177E53D3D2FC8AA /* Pods_Fish_Me.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,11 +127,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 669C9BBB1D13724500E4EE03 /* Build configuration list for PBXNativeTarget "Fish Me" */;
 			buildPhases = (
-				0F8942241240EBD986F29C1F /* Check Pods Manifest.lock */,
 				669C9B991D13724500E4EE03 /* Resources */,
 				669C9BBA1D13724500E4EE03 /* Embed App Extensions */,
 				D435AA315047AE9E5D9D1AF2 /* Frameworks */,
-				0C221FE0D3F4D0A397C72B3E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,39 +220,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0C221FE0D3F4D0A397C72B3E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fish Me/Pods-Fish Me-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0F8942241240EBD986F29C1F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		669C9BA11D13724500E4EE03 /* Sources */ = {
@@ -421,7 +370,6 @@
 		};
 		669C9BBC1D13724500E4EE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAD1D931E495C4107EA0CF45 /* Pods-Fish Me.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -435,7 +383,6 @@
 		};
 		669C9BBD1D13724500E4EE03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A3F4CBCC81F4780AC0CC8AF /* Pods-Fish Me.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
